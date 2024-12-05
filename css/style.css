@@ -1,0 +1,320 @@
+.container {
+	width: 100vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Typography */
+
+/* For Headers/Titles */
+
+@font-face{
+	font-family:AdobeVF;
+	src:url(../fonts/AdobeVFPrototype.ttf)
+}
+
+h1 {
+	font-size: 4em;
+	color: black;
+	position: absolute;
+	left: 80%;
+	top: 30%;
+	transform: translate(-360%,-300%);
+	font-family:AdobeVF ;
+}
+
+/* For Subheaders */
+h2 {
+	font-size: 2em;
+	color: black;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 32px;
+}
+
+/* For Captions */
+h4 {
+	font-size: 1em;
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 40px;
+}
+
+/* Navigation Bar */
+.navigation {
+	width: 100vw;
+	height: 40px;
+	background: aliceblue;
+	position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.3em;
+}
+
+li {
+	float: right; /* makes all of our links on the right side of the nav bar */
+	margin-left: 20px; /* gives 20px of spacing between each text link */
+}
+
+a {
+	color: purple;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+}
+
+li:last-child { /* last-child only targets the last item on our list, which is our home page link */
+	float: left; /* make sure that the home page link is on the left of the page, not the right */
+	margin-left: 0px;
+}
+
+
+/* Home Page CSS */
+
+.home { /* this is the hero image area */
+	width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
+	height: 100vh; /* same idea but for the vertical height of the web browser */
+	background:url(../images/400.jpg) no-repeat center ;
+	background-size: cover;
+}
+
+.hero_btn {
+	display: block;
+	width: 100px;
+	height: 40px;
+	background: white;
+	border: solid blue 3px;
+	border-radius: 10px;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+
+.one {
+	width: 1000px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 100vh;
+	background: white;
+/*	position:left: 10%;*/
+/* makes sure that the section is centered on the page */
+}
+
+.one_left {
+	width: 500px;
+	height: 400px;
+	border: solid red 1px;
+	position: absolute;
+	left: 100px;
+	top: 70px;
+}
+
+.one_img_left {
+	width: 500px;
+	height: 400px;
+}
+
+.one_txt_left {
+	font-size: 2em;
+	font-family:AdobeVF ;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -50px;
+}
+
+.one_right {
+	width: 500px;
+	height: 400px;
+	border: solid blue 1px;
+	position: absolute;
+	left: 1000px;
+	top: 70px;
+}
+
+.one_img_right {
+	width: 500px;
+	height: 400px;
+}
+
+.one_txt_right {
+	font-size: 2em;
+	font-family:AdobeVF ;
+	position: absolute;
+	left: 170px;
+	bottom: -50px;
+
+}
+.one_bottom {
+	width: 300px;
+	height: 400px;
+	border: solid green 1px;
+	position: absolute;
+	left: 100px;
+	top: 550px;
+}
+
+.one_img_bottom {
+	width: 500px;
+	height:750px;
+}
+
+.one_txt_bottom{
+	width: 890px;
+	height: 750px;
+	border: solid green 1px;
+	position: absolute;
+	left: 510px;
+	bottom: -351px;
+}
+
+.one_txt_bottom {
+	font-size: 2.7em;
+	font-family:AdobeVF ;
+	position: absolute;
+	letter-spacing: 5px;
+	
+}
+*/.Text{
+/*	position: ;
+	left:;*/
+}
+
+.two {
+	width: 1000px;
+	height: 50vh;
+	background: green;
+	margin: auto;
+	margin-top:600px;
+	margin-bottom: 100px;
+}
+.two_image{
+	width: 2000px;
+	height: 500px;
+	border: solid red 1px;
+	object-fit: cover;
+	position: absolute;
+	left: -400px;
+	top: 0px;
+
+}
+
+.two_txt{
+	font-size: 2.7em;
+	font-family:AdobeVF ;
+	position: absolute;
+	letter-spacing: 5px;
+	left:170px;
+	top:50px;
+
+}
+
+
+.two_img_center{
+	width: 2000px;
+	height: 600px;
+}
+
+.join{
+	display: block;
+	width: 100px;
+	height: 40px;
+	background: white;
+	border: solid blue 3px;
+	border-radius: 10px;
+	position: absolute;
+	left: 200px;
+	bottom: 20px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+
+
+}
+
+.three {
+	width: 2000px;
+	height: 300px;
+	background: lightcyan;
+	margin: auto;
+	margin-top: 300px;
+}
+.apps{
+	font-size: 2.7em;
+	font-family:AdobeVF ;
+	position: absolute;
+	letter-spacing: 5px;
+	left:37px;
+	bottom: 40%;
+
+}
+
+.appstore{
+	width: 300px;
+	height: 100px;
+	border: solid green 1px;
+	position: absolute;
+	left: 1000px;
+	bottom:30%;
+	
+}
+.appstore{
+	width:300px;
+	height: 100px;
+}
+
+
+
+.googleplay{
+	width:100px;
+	height: 100px;
+	position: absolute;
+	left: 750px;
+	bottom: 30%;
+
+}
+
+
+.four {
+	width: 2000px;
+	height: 300px;
+	background: lightsteelblue;
+	margin: auto;
+}
+
+.tect{
+	font-size: 2.7em;
+	font-family:AdobeVF ;
+	position: absolute;
+	letter-spacing: 10px;
+	word-spacing: 100px;
+	margin: 40px;
+	bottom: 40%;
+}
+
+.footer {
+	width: 100vw;
+	height: 100px;
+	background: black;
+
+}
+
+
+
+
